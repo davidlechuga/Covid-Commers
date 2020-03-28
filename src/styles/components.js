@@ -5,7 +5,7 @@ export const colors = {
   green: "#98ca3f",
   orange: "#f8b71c",
   gray: "#969696",
-  darkBlue: "#1c3643",
+  darkBlue: "#1c349c",
   lightBlue: "#1e5372",
   softGray: "#f6f8f9",
 }
@@ -49,44 +49,43 @@ export const StyledHeader = styled.header`
       height: 100%;
       font-size: 0.8rem;
     }
-  `}
-  ${above.large`
+  `} ${above.large`
     padding: 0 10rem;
     height: 4.5rem;
     a{
       height: 100%;
       font-size: 0.8rem;
     }
-  `}
+  `};
 `
 export const StyledJumbo = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 2rem;
-  color: white;
-  margin-bottom: 5rem;
-  overflow: hidden;
-  position: relative;
-  
-  div{
-    padding: 1rem;
-    width: 35vw;
-  };
-  & h2 {
-    margin: 0;
-    font-weight: 500;
-    font-size: 1rem;
-  };
-  & small{
-    font-weight: 100;
-    font-size: 0.6rem;
-  };
-  & img{
-    width: 35vw;
-  };
-  ${above.medium`
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem 2rem;
+	color: white;
+	margin-bottom: 5rem;
+	overflow: hidden;
+	position: relative;
+
+	div {
+		padding: 1rem;
+		width: 35vw;
+	}
+	& h2 {
+		margin: 0;
+		font-weight: 500;
+		font-size: 1rem;
+	}
+	& small {
+		font-weight: 100;
+		font-size: 0.6rem;
+	}
+	& img {
+		width: 35vw;
+	}
+	${above.medium`
     padding: 2rem 4rem;
     flex-direction: row;
     & h2 {
@@ -95,8 +94,7 @@ export const StyledJumbo = styled.div`
     & small{
       font-size: 0.8rem;
     };
-  `}
-  ${above.mediumL`
+  `} ${above.mediumL`
     padding: 2rem 4rem;
     flex-direction: row;
     & h2 {
@@ -105,8 +103,7 @@ export const StyledJumbo = styled.div`
     & small{
       font-size: 0.8rem;
     };
-  `}
-  ${above.large`
+  `} ${above.large`
     padding: 2rem 10rem;
     flex-direction: row;
     & h2 {
@@ -114,34 +111,29 @@ export const StyledJumbo = styled.div`
       font-weight: 500;
       font-size: 2rem;
     };
-  `}
-
-  &:before{
-    content: " ";
-    background-color: red;
-    background-color: ${colors.darkBlue};
-    z-index: -1;
-    position: absolute;
-    transform: rotate(-19deg);
-    border-radius: 35%;
-    top: -25%;
-    width: 120%;
-    height: 15rem;
-    ${above.medium`
+  `} &:before {
+		content: " ";
+		background-color: red;
+		background-color: ${colors.darkBlue};
+		z-index: -1;
+		position: absolute;
+		transform: rotate(-19deg);
+		border-radius: 35%;
+		top: -25%;
+		width: 120%;
+		height: 15rem;
+		${above.medium`
       height: 20rem;
       top: -50%;
-    `}
-    ${above.mediumL`
+    `} ${above.mediumL`
       height: 30rem;
       top: -60%;
-    `}
-    ${above.large`
+    `} ${above.large`
       width: 110vw;
       height: 52vw;
       top: -66%;
-    `}
-  };
-
+    `};
+	}
 `
 
 export const StyledProducts = styled.div`
@@ -255,12 +247,11 @@ export const StyledProductDetail = styled.div`
     img{
       margin-right: 2rem;
     }
-    `}
-  ${above.large`
+    `} ${above.large`
     flex-direction: row;
     height: 82vh;
     padding: 2rem 10rem;
-  `}
+  `};
 `
 
 export const StyledCart = styled.div`
@@ -298,10 +289,9 @@ export const StyledCart = styled.div`
   }
   ${above.medium`
     padding: 1rem 3rem;
-  `}
-  ${above.large`
+  `} ${above.large`
     padding: 5rem 10rem;
-  `}
+  `};
 `
 
 export const MenuItem = styled.li`
@@ -325,7 +315,7 @@ export const MenuItem = styled.li`
       margin-right: 5px; 
       width: 0.7rem;
     }
-  `}
+  `};
 `
 
 export const Footer = styled.footer`
@@ -465,8 +455,7 @@ export const Purchase = styled.div`
 export const Content = styled.div`
   ${above.medium`
     padding-top: 3.5rem;
-    `}
-  ${above.large`
+    `} ${above.large`
     padding-top: 4.5rem;
-  `}
+  `};
 `
