@@ -8,7 +8,7 @@ import {
   StyledProductDetail,
   QtySelect,
 } from "../styles/components"
-import { SEO } from "./"
+import { SEO, Stars } from "./"
 
 export default function ProductDetail({
   price,
@@ -28,6 +28,9 @@ export default function ProductDetail({
         <Tag>Popular</Tag>
         <h2>{name}</h2>
         <b>MXN {formatPrice}</b>
+        <Stars />
+        {metadata.higiene && <h3> Productos de Higiene </h3>}
+        <small>{metadata.description}</small>
         {metadata.higiene && (
           <SizeSelect selected={size}>
             <SizeButton onClick={() => setsize(1)}> 100L </SizeButton>
@@ -42,6 +45,7 @@ export default function ProductDetail({
           <input type="text" disabled value={qty} />
           <Button onClick={() => setQty(qty + 1)}>+</Button>
         </QtySelect>
+        <Button>Agregar al Carrito</Button>
       </div>
     </StyledProductDetail>
   )
