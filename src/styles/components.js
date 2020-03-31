@@ -211,6 +211,7 @@ export const StyledProductDetail = styled.div`
     object-fit: cover;
     object-position: center;
     margin: 0;
+    padding-right: 100px;
   }
   p {
     color: #171717;
@@ -324,7 +325,7 @@ export const Footer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
   position: relative;
   bottom: 0;
   a {
