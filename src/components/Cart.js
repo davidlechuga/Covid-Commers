@@ -40,7 +40,7 @@ export default function Cart() {
     <StyledCart>
       <h2>Carrito de Compras</h2>
       <table>
-        <tbdoy>
+        <tbody>
           <tr>
             <th>Producto</th>
             <th>Precio</th>
@@ -58,7 +58,7 @@ export default function Cart() {
               <td>{priceFormat(productos.quantity * productos.price)} </td>
             </tr>
           ))}
-        </tbdoy>
+        </tbody>
       </table>
       <nav>
         <div>

@@ -8,7 +8,7 @@
 
 const path = require("path")
 
-exports.createPages = async ({ actions, graphql }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const productTemplate = path.resolve(`src/templates/Product.js`)
   const result = await graphql(`
